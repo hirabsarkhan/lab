@@ -1,0 +1,32 @@
+writing text in my file using file writer package assignment;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+ 
+
+public class fh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		System.out.println("helo");
+		try {
+			
+		FileWriter filewriter = new FileWriter("myFile2.txt");  //willl do the job of creating too if file doesnt exist
+		filewriter.write("writing text in my file using file writer");
+		filewriter.close(); //to save ourselves from attack
+		
+//		File myFile = new File("myFile.txt");
+//		if(myFile.createNewFile()) {
+//			System.out.println("file created");
+//		}
+//		else {
+//			System.out.println("file exists");
+	}
+		catch(IOException e) {
+		System.out.println("error");
+		
+		}
+	}
+
+}
